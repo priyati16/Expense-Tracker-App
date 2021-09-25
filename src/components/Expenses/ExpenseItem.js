@@ -1,14 +1,14 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './ExpenseItem.css';
 import './ExpenseDate.css';
 
 function ExpenseItem(props) {
-  const [title,setTitle] = useState(props.title);
-  console.log('expense item is evaluated');
+//   const [title,setTitle] = useState(props.title);
+//   console.log('Expense item is evaluated');
 
-    // const changeTitle=()=>{
-    //     setTitle('updated');
-    // }
+//     const changeTitle=()=>{
+//         setTitle('updated');
+//     }
     return (
             <div className="new-expenses">
                 <div className="expense-item">
@@ -19,7 +19,7 @@ function ExpenseItem(props) {
                         
                     </div>
                     <div className="expense-item__description">
-                        <h2>{title}</h2>
+                        <h2>{props.title}</h2>
                         <div className="expense-item__price">Rs.{props.amount}</div>
                         {/* <button onClick={changeTitle}>Change title</button> */}
                     </div>
