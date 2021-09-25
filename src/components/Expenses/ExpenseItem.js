@@ -6,9 +6,9 @@ function ExpenseItem(props) {
   const [title,setTitle] = useState(props.title);
   console.log('expense item is evaluated');
 
-    const changeTitle=()=>{
-        setTitle('updated');
-    }
+    // const changeTitle=()=>{
+    //     setTitle('updated');
+    // }
     return (
             <div className="new-expenses">
                 <div className="expense-item">
